@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <section id="form_section">
+        <div class="mobile">
+          <h2>דברו איתנו עכשיו:</h2>
+          <div id="contactus">
+            <a href="tel:1800208088" id="callus"> </a>
+          </div>
+        </div>
+        <h2 class="form-title mobile">השאירו פרטים ונציג יחזור אליכם:</h2>
+
+        <div class="input-wrapper radio-wrap">
+          <fieldset>
+            <legend>האם אתה לקוח של יס?</legend>
+            <div class="radio-box left shadow">
+              <input
+                class="client radios"
+                id="client"
+                type="radio"
+                name="fieldid[su18]"
+                data-error-container="#alertBox"
+                alt="לקוח"
+                title="לקוח"
+              />
+              <label
+                for="client"
+                class="radio-label"
+                tabindex="1"
+                id="client_label"
+                >לקוח
+                <span class="eng">yes</span>
+              </label>
+            </div>
+            <div class="radio-box right">
+              <input
+                class="not-client radios"
+                id="not_client"
+                type="radio"
+                name="fieldid[su19]"
+                data-error-container="#alertBox"
+                alt="לא לקוח"
+                title="לא לקוח"
+                checked="checked"
+              />
+              <label
+                for="not_client"
+                class="radio-label checked"
+                tabindex="1"
+                id="no_cliet_label"
+                >לא לקוח
+                <span class="eng">yes</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="inputs-wrapper hide-if-popup">
+          <div class="input-wrapper full_name-wrap">
+            <label for="full_name" class="fancy-label">
+              <span class="field-label">שם מלא:</span>
+            </label>
+            <input
+              title="שם מלא"
+              type="text"
+              id="full_name"
+              class="form-input fancy-label-field"
+              name="firstname"
+              data-error-container="#alertBox"
+              value=""
+              autocomplete="name"
+              data-required="true"
+              data-notblank="true"
+              data-error-message="שם ומשפחה - שדה חובה"
+              data-maxlength="40"
+              tabindex="1"
+            />
+          </div>
+          <div class="input-wrapper phone-wrap">
+            <div class="input-phone-wrap">
+              <label for="phone" class="fancy-label">
+                <span class="field-label">טלפון:</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-input ltr fancy-label-field"
+                name="telephone1"
+                data-error-container="#alertBox"
+                data-required="true"
+                data-notblank="true"
+                data-error-message="שדה חובה"
+                data-maxlength="10"
+                data-minlength="10"
+                data-type="number"
+                title="טלפון"
+                tabindex="1"
+              />
+            </div>
+          </div>
+          <div class="input-wrapper sumbit-wrap">
+            <input
+              type="submit"
+              id="btn"
+              value="נשמע מעניין! תתקשרו אלי"
+              title="שלח"
+              tabindex="1"
+              href=""
+              onclick="submitEmail()"
+            />
+          </div>
+        </div>
+      </form>
+      <div id="popup" aria-hidden="true">
+        <a href="#" id="close" tabindex="0"></a>
+        <span class="glow">כבר יש לכם <span class="eng">yes</span>?</span>
+        <br />
+        <span>
+          מעולה! <br />הצטרפו ל-
+          <span class="eng">yesULTIMATE</span>
+          <br />ותקבלו יותר בפחות!
+          <a
+            href="tel:*2080"
+            id="popup_link"
+            target="_blank"
+            class="blue"
+            title="לפרטים והצטרפות"
+            >חייגו *2080</a
+          >
+        </span>
+      </div>
+    </section>
+    <script src="./SubmitEmail.js" async></script>
+  </body>
+</html>
